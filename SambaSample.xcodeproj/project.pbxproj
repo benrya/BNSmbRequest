@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04A9AB0B1466A7F2000F9F46 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A9AB0A1466A7F2000F9F46 /* libz.dylib */; };
+		04AED91B148B7407003A1A3C /* libsmbclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04AED916148B7407003A1A3C /* libsmbclient.a */; };
+		04AED91C148B7407003A1A3C /* libtalloc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04AED918148B7407003A1A3C /* libtalloc.a */; };
+		04AED91D148B7407003A1A3C /* libtdb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04AED919148B7407003A1A3C /* libtdb.a */; };
+		04AED91E148B7407003A1A3C /* libwbclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04AED91A148B7407003A1A3C /* libwbclient.a */; };
+		04AED934148B7479003A1A3C /* BNSmbDirectory.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AED925148B7479003A1A3C /* BNSmbDirectory.m */; };
+		04AED935148B7479003A1A3C /* BNSmbFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AED927148B7479003A1A3C /* BNSmbFile.m */; };
+		04AED936148B7479003A1A3C /* BNSmbRequest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04AED929148B7479003A1A3C /* BNSmbRequest.mm */; };
+		04AED937148B7479003A1A3C /* NSString+Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AED92B148B7479003A1A3C /* NSString+Encoding.m */; };
+		04AED938148B7479003A1A3C /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AED92D148B7479003A1A3C /* RegexKitLite.m */; };
+		04AED939148B7479003A1A3C /* SmbInputFileStream.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04AED92F148B7479003A1A3C /* SmbInputFileStream.mm */; };
+		04AED93A148B7479003A1A3C /* smbmm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04AED930148B7479003A1A3C /* smbmm.cpp */; };
+		04AED93B148B7479003A1A3C /* SmbOutputFileStream.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04AED933148B7479003A1A3C /* SmbOutputFileStream.mm */; };
+		04AED944148BCDCE003A1A3C /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04AED943148BCDCE003A1A3C /* libiconv.dylib */; };
+		04B214AB139E6F5E006C4445 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B214AA139E6F5E006C4445 /* UIKit.framework */; };
+		04B214AD139E6F5E006C4445 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B214AC139E6F5E006C4445 /* Foundation.framework */; };
+		04B214AF139E6F5E006C4445 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B214AE139E6F5E006C4445 /* CoreGraphics.framework */; };
+		04B214B5139E6F5E006C4445 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04B214B3139E6F5E006C4445 /* InfoPlist.strings */; };
+		04B214B8139E6F5E006C4445 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B214B7139E6F5E006C4445 /* main.m */; };
+		04B214BB139E6F5E006C4445 /* SambaSampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B214BA139E6F5E006C4445 /* SambaSampleAppDelegate.m */; };
+		04B214BE139E6F5E006C4445 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B214BC139E6F5E006C4445 /* MainWindow.xib */; };
+		04B214C1139E6F5E006C4445 /* SambaSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B214C0139E6F5E006C4445 /* SambaSampleViewController.m */; };
+		04B214C4139E6F5E006C4445 /* SambaSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B214C2139E6F5E006C4445 /* SambaSampleViewController.xib */; };
+		04B7B314147F738C000493B0 /* DirectoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B7B312147F738C000493B0 /* DirectoryViewController.m */; };
+		04B7B315147F738C000493B0 /* DirectoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B7B313147F738C000493B0 /* DirectoryViewController.xib */; };
+		04B7B31A1480BAD2000493B0 /* FileInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B7B3181480BAD2000493B0 /* FileInfoViewController.m */; };
+		04B7B31B1480BAD2000493B0 /* FileInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B7B3191480BAD2000493B0 /* FileInfoViewController.xib */; };
+		04CAAF3E139FC292004FADD8 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CAAF3D139FC292004FADD8 /* libicucore.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04A9AB0A1466A7F2000F9F46 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		04AED916148B7407003A1A3C /* libsmbclient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsmbclient.a; sourceTree = "<group>"; };
+		04AED917148B7407003A1A3C /* libsmbclient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libsmbclient.h; sourceTree = "<group>"; };
+		04AED918148B7407003A1A3C /* libtalloc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtalloc.a; sourceTree = "<group>"; };
+		04AED919148B7407003A1A3C /* libtdb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtdb.a; sourceTree = "<group>"; };
+		04AED91A148B7407003A1A3C /* libwbclient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwbclient.a; sourceTree = "<group>"; };
+		04AED923148B7479003A1A3C /* BNSmbContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNSmbContext.h; sourceTree = "<group>"; };
+		04AED924148B7479003A1A3C /* BNSmbDirectory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNSmbDirectory.h; sourceTree = "<group>"; };
+		04AED925148B7479003A1A3C /* BNSmbDirectory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNSmbDirectory.m; sourceTree = "<group>"; };
+		04AED926148B7479003A1A3C /* BNSmbFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNSmbFile.h; sourceTree = "<group>"; };
+		04AED927148B7479003A1A3C /* BNSmbFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNSmbFile.m; sourceTree = "<group>"; };
+		04AED928148B7479003A1A3C /* BNSmbRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNSmbRequest.h; sourceTree = "<group>"; };
+		04AED929148B7479003A1A3C /* BNSmbRequest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BNSmbRequest.mm; sourceTree = "<group>"; };
+		04AED92A148B7479003A1A3C /* NSString+Encoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Encoding.h"; sourceTree = "<group>"; };
+		04AED92B148B7479003A1A3C /* NSString+Encoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Encoding.m"; sourceTree = "<group>"; };
+		04AED92C148B7479003A1A3C /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		04AED92D148B7479003A1A3C /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		04AED92E148B7479003A1A3C /* SmbInputFileStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmbInputFileStream.h; sourceTree = "<group>"; };
+		04AED92F148B7479003A1A3C /* SmbInputFileStream.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SmbInputFileStream.mm; sourceTree = "<group>"; };
+		04AED930148B7479003A1A3C /* smbmm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = smbmm.cpp; sourceTree = "<group>"; };
+		04AED931148B7479003A1A3C /* smbmm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smbmm.h; sourceTree = "<group>"; };
+		04AED932148B7479003A1A3C /* SmbOutputFileStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmbOutputFileStream.h; sourceTree = "<group>"; };
+		04AED933148B7479003A1A3C /* SmbOutputFileStream.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SmbOutputFileStream.mm; sourceTree = "<group>"; };
+		04AED943148BCDCE003A1A3C /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		04B214A6139E6F5E006C4445 /* SambaSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SambaSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04B214AA139E6F5E006C4445 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		04B214AC139E6F5E006C4445 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		04B214AE139E6F5E006C4445 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		04B214B2139E6F5E006C4445 /* SambaSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SambaSample-Info.plist"; sourceTree = "<group>"; };
+		04B214B4139E6F5E006C4445 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		04B214B6139E6F5E006C4445 /* SambaSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SambaSample-Prefix.pch"; sourceTree = "<group>"; };
+		04B214B7139E6F5E006C4445 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04B214B9139E6F5E006C4445 /* SambaSampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SambaSampleAppDelegate.h; sourceTree = "<group>"; };
+		04B214BA139E6F5E006C4445 /* SambaSampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SambaSampleAppDelegate.m; sourceTree = "<group>"; };
+		04B214BD139E6F5E006C4445 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		04B214BF139E6F5E006C4445 /* SambaSampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SambaSampleViewController.h; sourceTree = "<group>"; };
+		04B214C0139E6F5E006C4445 /* SambaSampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SambaSampleViewController.m; sourceTree = "<group>"; };
+		04B214C3139E6F5E006C4445 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SambaSampleViewController.xib; sourceTree = "<group>"; };
+		04B7B311147F738C000493B0 /* DirectoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectoryViewController.h; sourceTree = "<group>"; };
+		04B7B312147F738C000493B0 /* DirectoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectoryViewController.m; sourceTree = "<group>"; };
+		04B7B313147F738C000493B0 /* DirectoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DirectoryViewController.xib; sourceTree = "<group>"; };
+		04B7B3171480BAD2000493B0 /* FileInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileInfoViewController.h; sourceTree = "<group>"; };
+		04B7B3181480BAD2000493B0 /* FileInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileInfoViewController.m; sourceTree = "<group>"; };
+		04B7B3191480BAD2000493B0 /* FileInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FileInfoViewController.xib; sourceTree = "<group>"; };
+		04CAAF3D139FC292004FADD8 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04B214A3139E6F5E006C4445 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04AED944148BCDCE003A1A3C /* libiconv.dylib in Frameworks */,
+				04A9AB0B1466A7F2000F9F46 /* libz.dylib in Frameworks */,
+				04CAAF3E139FC292004FADD8 /* libicucore.dylib in Frameworks */,
+				04B214AB139E6F5E006C4445 /* UIKit.framework in Frameworks */,
+				04B214AD139E6F5E006C4445 /* Foundation.framework in Frameworks */,
+				04B214AF139E6F5E006C4445 /* CoreGraphics.framework in Frameworks */,
+				04AED91B148B7407003A1A3C /* libsmbclient.a in Frameworks */,
+				04AED91C148B7407003A1A3C /* libtalloc.a in Frameworks */,
+				04AED91D148B7407003A1A3C /* libtdb.a in Frameworks */,
+				04AED91E148B7407003A1A3C /* libwbclient.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04AED915148B7407003A1A3C /* libsmbclient */ = {
+			isa = PBXGroup;
+			children = (
+				04AED916148B7407003A1A3C /* libsmbclient.a */,
+				04AED917148B7407003A1A3C /* libsmbclient.h */,
+				04AED918148B7407003A1A3C /* libtalloc.a */,
+				04AED919148B7407003A1A3C /* libtdb.a */,
+				04AED91A148B7407003A1A3C /* libwbclient.a */,
+			);
+			path = libsmbclient;
+			sourceTree = "<group>";
+		};
+		04AED922148B7479003A1A3C /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				04AED923148B7479003A1A3C /* BNSmbContext.h */,
+				04AED924148B7479003A1A3C /* BNSmbDirectory.h */,
+				04AED925148B7479003A1A3C /* BNSmbDirectory.m */,
+				04AED926148B7479003A1A3C /* BNSmbFile.h */,
+				04AED927148B7479003A1A3C /* BNSmbFile.m */,
+				04AED928148B7479003A1A3C /* BNSmbRequest.h */,
+				04AED929148B7479003A1A3C /* BNSmbRequest.mm */,
+				04AED92A148B7479003A1A3C /* NSString+Encoding.h */,
+				04AED92B148B7479003A1A3C /* NSString+Encoding.m */,
+				04AED92C148B7479003A1A3C /* RegexKitLite.h */,
+				04AED92D148B7479003A1A3C /* RegexKitLite.m */,
+				04AED92E148B7479003A1A3C /* SmbInputFileStream.h */,
+				04AED92F148B7479003A1A3C /* SmbInputFileStream.mm */,
+				04AED931148B7479003A1A3C /* smbmm.h */,
+				04AED930148B7479003A1A3C /* smbmm.cpp */,
+				04AED932148B7479003A1A3C /* SmbOutputFileStream.h */,
+				04AED933148B7479003A1A3C /* SmbOutputFileStream.mm */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		04B2149B139E6F5E006C4445 = {
+			isa = PBXGroup;
+			children = (
+				04AED922148B7479003A1A3C /* Class */,
+				04B214B0139E6F5E006C4445 /* SambaSample */,
+				04B214A9139E6F5E006C4445 /* Frameworks */,
+				04B214A7139E6F5E006C4445 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04B214A7139E6F5E006C4445 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04B214A6139E6F5E006C4445 /* SambaSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04B214A9139E6F5E006C4445 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04AED915148B7407003A1A3C /* libsmbclient */,
+				04AED943148BCDCE003A1A3C /* libiconv.dylib */,
+				04A9AB0A1466A7F2000F9F46 /* libz.dylib */,
+				04CAAF3D139FC292004FADD8 /* libicucore.dylib */,
+				04B214AA139E6F5E006C4445 /* UIKit.framework */,
+				04B214AC139E6F5E006C4445 /* Foundation.framework */,
+				04B214AE139E6F5E006C4445 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04B214B0139E6F5E006C4445 /* SambaSample */ = {
+			isa = PBXGroup;
+			children = (
+				04B214B9139E6F5E006C4445 /* SambaSampleAppDelegate.h */,
+				04B214BA139E6F5E006C4445 /* SambaSampleAppDelegate.m */,
+				04B214BC139E6F5E006C4445 /* MainWindow.xib */,
+				04B214BF139E6F5E006C4445 /* SambaSampleViewController.h */,
+				04B214C0139E6F5E006C4445 /* SambaSampleViewController.m */,
+				04B214C2139E6F5E006C4445 /* SambaSampleViewController.xib */,
+				04B7B311147F738C000493B0 /* DirectoryViewController.h */,
+				04B7B312147F738C000493B0 /* DirectoryViewController.m */,
+				04B7B313147F738C000493B0 /* DirectoryViewController.xib */,
+				04B7B3171480BAD2000493B0 /* FileInfoViewController.h */,
+				04B7B3181480BAD2000493B0 /* FileInfoViewController.m */,
+				04B7B3191480BAD2000493B0 /* FileInfoViewController.xib */,
+				04B214B1139E6F5E006C4445 /* Supporting Files */,
+			);
+			path = SambaSample;
+			sourceTree = "<group>";
+		};
+		04B214B1139E6F5E006C4445 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04B214B2139E6F5E006C4445 /* SambaSample-Info.plist */,
+				04B214B3139E6F5E006C4445 /* InfoPlist.strings */,
+				04B214B6139E6F5E006C4445 /* SambaSample-Prefix.pch */,
+				04B214B7139E6F5E006C4445 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04B214A5139E6F5E006C4445 /* SambaSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04B214C7139E6F5E006C4445 /* Build configuration list for PBXNativeTarget "SambaSample" */;
+			buildPhases = (
+				04B214A2139E6F5E006C4445 /* Sources */,
+				04B214A3139E6F5E006C4445 /* Frameworks */,
+				04B214A4139E6F5E006C4445 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SambaSample;
+			productName = SambaSample;
+			productReference = 04B214A6139E6F5E006C4445 /* SambaSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04B2149D139E6F5E006C4445 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 04B214A0139E6F5E006C4445 /* Build configuration list for PBXProject "SambaSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 04B2149B139E6F5E006C4445;
+			productRefGroup = 04B214A7139E6F5E006C4445 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04B214A5139E6F5E006C4445 /* SambaSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04B214A4139E6F5E006C4445 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B214B5139E6F5E006C4445 /* InfoPlist.strings in Resources */,
+				04B214BE139E6F5E006C4445 /* MainWindow.xib in Resources */,
+				04B214C4139E6F5E006C4445 /* SambaSampleViewController.xib in Resources */,
+				04B7B315147F738C000493B0 /* DirectoryViewController.xib in Resources */,
+				04B7B31B1480BAD2000493B0 /* FileInfoViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04B214A2139E6F5E006C4445 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B214B8139E6F5E006C4445 /* main.m in Sources */,
+				04B214BB139E6F5E006C4445 /* SambaSampleAppDelegate.m in Sources */,
+				04B214C1139E6F5E006C4445 /* SambaSampleViewController.m in Sources */,
+				04B7B314147F738C000493B0 /* DirectoryViewController.m in Sources */,
+				04B7B31A1480BAD2000493B0 /* FileInfoViewController.m in Sources */,
+				04AED934148B7479003A1A3C /* BNSmbDirectory.m in Sources */,
+				04AED935148B7479003A1A3C /* BNSmbFile.m in Sources */,
+				04AED936148B7479003A1A3C /* BNSmbRequest.mm in Sources */,
+				04AED937148B7479003A1A3C /* NSString+Encoding.m in Sources */,
+				04AED938148B7479003A1A3C /* RegexKitLite.m in Sources */,
+				04AED939148B7479003A1A3C /* SmbInputFileStream.mm in Sources */,
+				04AED93A148B7479003A1A3C /* smbmm.cpp in Sources */,
+				04AED93B148B7479003A1A3C /* SmbOutputFileStream.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04B214B3139E6F5E006C4445 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04B214B4139E6F5E006C4445 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		04B214BC139E6F5E006C4445 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04B214BD139E6F5E006C4445 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		04B214C2139E6F5E006C4445 /* SambaSampleViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04B214C3139E6F5E006C4445 /* en */,
+			);
+			name = SambaSampleViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04B214C5139E6F5E006C4445 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04B214C6139E6F5E006C4445 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		04B214C8139E6F5E006C4445 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SambaSample/SambaSample-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/libsmbclient",
+					"${SDKROOT}/usr/include/libxml2",
+				);
+				INFOPLIST_FILE = "SambaSample/SambaSample-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/libsmbclient\"",
+				);
+				OTHER_LDFLAGS = "-lresolv";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		04B214C9139E6F5E006C4445 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SambaSample/SambaSample-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/libsmbclient",
+					"${SDKROOT}/usr/include/libxml2",
+				);
+				INFOPLIST_FILE = "SambaSample/SambaSample-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/libsmbclient\"",
+				);
+				OTHER_LDFLAGS = "-lresolv";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04B214A0139E6F5E006C4445 /* Build configuration list for PBXProject "SambaSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04B214C5139E6F5E006C4445 /* Debug */,
+				04B214C6139E6F5E006C4445 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04B214C7139E6F5E006C4445 /* Build configuration list for PBXNativeTarget "SambaSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04B214C8139E6F5E006C4445 /* Debug */,
+				04B214C9139E6F5E006C4445 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04B2149D139E6F5E006C4445 /* Project object */;
+}
